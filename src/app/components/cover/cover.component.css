@@ -1,0 +1,35 @@
+.cover {
+  width: 310px;
+  height: 110px;
+  background-color: #f43546;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  border: 5px solid #ba1235;
+}
+
+.cover-middle {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  display: block;
+  width: 45%;
+  height: 50%;
+  background-color: #081921;
+  border: 5px solid #ba1235;
+  border-bottom: none;
+  border-radius: 50% 50% 25% 25% / 100% 100% 0% 0%;
+  transform: translateX(-50%);
+}
+
+.cover-middle::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  width: 55%;
+  height: 60%;
+  background-color: #0ee5ff;
+  border-radius: 50% 50% 0% 0% / 100% 100% 0% 0%;
+  transform: translateX(-50%);
+}

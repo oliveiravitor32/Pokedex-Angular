@@ -1,0 +1,9 @@
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokedex .cover-bottom {
+  transform: rotate(180deg);
+}

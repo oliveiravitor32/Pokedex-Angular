@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-body">
+    <div class="card-body-container">
+      <img src="{{ pokemon.sprites.front_default }}" alt="" />
+      <div class="card-body-container-infos">
+        <h3>{{ pokemon.name }}</h3>
+        <p>Height: {{ pokemon.height }}</p>
+        <p>Weight: {{ pokemon.weight }}</p>
+        <div class="card-body-container-infos-stats">
+          <span
+            class="card-body-container-infos-stats-type"
+            *ngFor="let t of pokemon.types"
+            >{{ t.type.name }}</span
+          >
+        </div>
+      </div>
+    </div>
+    <div class="card-body-description">
+      <p>{{ pokemon.flavor_text_entries[0].flavor_text }}</p>
+    </div>
+  </div>
+</div>
