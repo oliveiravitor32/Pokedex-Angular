@@ -1,0 +1,11 @@
+<header>
+  <form (ngSubmit)="onSubmit()">
+    <input
+      type="text"
+      [(ngModel)]="searchedPokemon"
+      name="searchedPokemon"
+      placeholder="Search pokemon by name or id..."
+    />
+    <button type="submit">Search</button>
+  </form>
+</header>

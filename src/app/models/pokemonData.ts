@@ -1,3 +1,5 @@
+import { SpecieData } from './specieData';
+
 export interface PokemonData {
   name: string;
   id: number;
@@ -13,8 +15,5 @@ export interface PokemonData {
       url: string;
     };
   }[];
-  flavor_text_entries: {
-    flavor_text: string;
-    language: { name: string; url: string };
-  }[];
+  specieData: SpecieData;
 }

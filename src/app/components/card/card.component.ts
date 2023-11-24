@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PokemonData } from 'src/app/models/pokemonData';
 import { PokemonService } from 'src/app/services/pokemon.service';
 
@@ -7,26 +7,34 @@ import { PokemonService } from 'src/app/services/pokemon.service';
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css'],
 })
-export class CardComponent {
-  pokemon: PokemonData;
+export class CardComponent implements OnInit {
+  pokemon: PokemonData = {
+    name: 'Searching...',
+    id: 0,
+    height: 0,
+    weight: 0,
+    sprites: {
+      front_default:
+        'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg',
+    },
+    types: [],
+    specieData: {
+      flavor_text_entries: [
+        { flavor_text: '', language: { name: '', url: '' } },
+      ],
+    },
+  };
 
   constructor(private service: PokemonService) {
-    this.pokemon = {
-      name: '',
-      id: 0,
-      height: 0,
-      weight: 0,
-      sprites: { front_default: '' },
-      types: [],
-      flavor_text_entries: [],
-    };
-
-    this.getPokemon('squirtle');
+    this.service.search.subscribe((searchedPokemon: string) => {
+      this.getPokemon(searchedPokemon);
+    });
   }
+  ngOnInit() {}
 
   getPokemon(searchPokemon: string) {
     this.service.getPokemon(searchPokemon).subscribe({
-      next: (res) => {
+      next: (res: PokemonData) => {
         this.pokemon = {
           id: res.id,
           name: res.name,
@@ -34,9 +42,13 @@ export class CardComponent {
           weight: res.weight,
           sprites: res.sprites,
           types: res.types,
-          flavor_text_entries: [],
+          specieData: {
+            flavor_text_entries: [
+              { flavor_text: '', language: { name: '', url: '' } },
+            ],
+          },
         };
-        this.getFlavorText(res.id);
+        this.getFlavorText(this.pokemon.id);
       },
     });
   }
@@ -44,7 +56,7 @@ export class CardComponent {
   getFlavorText(id: number) {
     this.service.getFlavorText(id).subscribe({
       next: (res) => {
-        this.pokemon.flavor_text_entries = res.flavor_text_entries;
+        this.pokemon.specieData.flavor_text_entries = res.flavor_text_entries;
       },
     });
   }

@@ -5,3 +5,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
+body {
+  background: linear-gradient(to bottom, #2d91c2 0%, #1e528e 100%);
+}
