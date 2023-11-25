@@ -2,23 +2,13 @@
   border: 5px solid #599cfb;
   border-top: none;
   border-bottom: none;
-  width: 300px;
-  height: 350px;
+  width: 280px;
+  height: 310px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #0ee5ff;
-  overflow: hidden;
-}
-.card.onAnimation {
-  animation: closePokedex 1.2s linear;
-}
-.card.onAnimation .card-body-container {
-  display: none;
-}
-.card.onAnimation .card-body-description {
-  display: none;
 }
 
 .card-body {
@@ -35,8 +25,8 @@
 .card-body-container > img {
   width: 50%;
   height: 100%;
-  background-image: linear-gradient(#599cfb 2px, transparent 2px),
-    linear-gradient(to right, #599cfb 2px, transparent 2px);
+  background-image: linear-gradient(#599cfb 1.5px, transparent 1.5px),
+    linear-gradient(to right, #599cfb 1.5px, transparent 1.5px);
   background-size: 24px 24px;
   background-color: #7eefff;
   border-right: 2px solid #081921;
@@ -78,22 +68,9 @@
 
 .card-body-container-infos-stats-type {
   color: white;
-  background-color: #081921;
+  background-color: red;
   padding: 2px;
   border-radius: 3px;
-  border: 2px solid black;
   font-size: 10px;
   font-weight: bold;
-}
-
-@keyframes closePokedex {
-  from {
-    height: 350px;
-  }
-  50% {
-    height: 0px;
-  }
-  to {
-    height: 350px;
-  }
 }

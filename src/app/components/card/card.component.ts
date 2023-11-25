@@ -24,6 +24,7 @@ export class CardComponent implements OnInit {
       ],
     },
   };
+  animationClass: string = '';
 
   constructor(private service: PokemonService) {
     this.service.search.subscribe((searchedPokemon: string) => {
@@ -33,6 +34,10 @@ export class CardComponent implements OnInit {
   ngOnInit() {}
 
   getPokemon(searchPokemon: string) {
+    this.animationClass = 'onAnimation';
+    setTimeout(() => {
+      this.animationClass = '';
+    }, 1200);
     this.service.getPokemon(searchPokemon).subscribe({
       next: (res: PokemonData) => {
         this.pokemon = {

@@ -15,7 +15,9 @@ export class PokemonService {
   constructor(private http: HttpClient) {}
 
   getPokemon(searchedPokemon: string): Observable<PokemonData> {
-    return this.http.get<PokemonData>(this.api + 'pokemon/' + searchedPokemon);
+    return this.http.get<PokemonData>(
+      this.api + 'pokemon/' + searchedPokemon.toLowerCase()
+    );
   }
 
   getFlavorText(id: number): Observable<SpecieData> {
@@ -23,6 +25,6 @@ export class PokemonService {
   }
 
   searchPokemon(searchedPokemon: string) {
-    this.search.emit(searchedPokemon);
+    this.search.emit(searchedPokemon.toLowerCase());
   }
 }
