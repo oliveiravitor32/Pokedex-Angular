@@ -1,0 +1,11 @@
+@media screen and (max-width: 520px) {
+  .cover {
+    width: 300px;
+  }
+  .cover-middle {
+    width: 40%;
+  }
+  .cover-middle::before {
+    width: 50%;
+  }
+}

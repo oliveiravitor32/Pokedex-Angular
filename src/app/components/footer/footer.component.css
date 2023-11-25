@@ -6,10 +6,10 @@ footer {
   color: white;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   font-size: 16px;
-  height: 10vh;
+  min-height: 10vh;
 }
 
 footer a {

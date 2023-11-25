@@ -1,0 +1,10 @@
+@media screen and (max-width: 520px) {
+  header > form > input {
+    width: 200px;
+    font-size: 12px;
+  }
+  header > form > button {
+    width: 60px;
+    font-size: 14px;
+  }
+}

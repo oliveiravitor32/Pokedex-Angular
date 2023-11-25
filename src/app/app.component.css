@@ -1,4 +1,4 @@
 .container-pokedex {
   padding: 40px;
-  height: 80vh;
+  min-height: 80vh;
 }

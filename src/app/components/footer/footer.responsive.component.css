@@ -1,0 +1,12 @@
+@media screen and (max-width: 520px) {
+  footer {
+    gap: 10px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+  footer h3 {
+    font-size: 14px;
+  }
+}

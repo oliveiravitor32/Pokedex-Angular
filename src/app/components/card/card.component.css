@@ -24,7 +24,7 @@
 .card-body {
   background-color: #7eefff;
   width: 90%;
-  height: 75%;
+  min-height: 75%;
   border: 5px solid #081921;
 }
 .card-body-container {
@@ -41,7 +41,6 @@
   background-color: #7eefff;
   border-right: 2px solid #081921;
 }
-
 .card-body-container-infos {
   width: 50%;
   height: 100%;
@@ -60,14 +59,6 @@
   font-size: 12px;
   padding: 0 10px;
 }
-
-.card-body-description {
-  padding: 10px;
-}
-.card-body-description > p {
-  font-size: 12px;
-}
-
 .card-body-container-infos-stats {
   border-top: 2px solid #081921;
   display: flex;
@@ -75,7 +66,6 @@
   gap: 5px;
   flex-wrap: wrap;
 }
-
 .card-body-container-infos-stats-type {
   color: white;
   background-color: #081921;
@@ -84,6 +74,16 @@
   border: 2px solid black;
   font-size: 10px;
   font-weight: bold;
+}
+
+.card-body-description {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  text-wrap: wrap;
+}
+.card-body-description > p {
+  font-size: 12px;
 }
 
 @keyframes closePokedex {
