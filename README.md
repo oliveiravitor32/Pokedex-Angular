@@ -26,6 +26,8 @@ This project has good practices in using services for API requests and data proc
 ## :arrow_forward: Demo
 [Vercel demo](https://angular-pokedex-oliveiravitor32.vercel.app/)
 
+</br> </br>
+
 ## Angular infos
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
