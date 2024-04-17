@@ -17,13 +17,13 @@ https://angular-pokedex-oliveiravitor32.vercel.app/
 Project of a pokedex built in Angular and with the <a href="https://pokeapi.co.">PokeApi</a>(Pokemon API)
 This project has good practices in using services for API requests and data processing for each component, responsive page and components for easy maintenance.
 
-## Features
+## :books: Features
 - Responsive page
 - Using components
 - Service
 - Communication with API
 
-## Demo
+## :arrow_forward: Demo
 https://angular-pokedex-oliveiravitor32.vercel.app/
 
 ## Angular infos
