@@ -11,7 +11,7 @@ Este projeto conta com boas praticas na utilização de service para requisiçã
 
 ## :arrow_forward: Demo
 https://angular-pokedex-oliveiravitor32.vercel.app/
-
+</br> </br>
 # Pokedex - Angular - EN
 
 Project of a pokedex built in Angular and with the <a href="https://pokeapi.co.">PokeApi</a>(Pokemon API)
