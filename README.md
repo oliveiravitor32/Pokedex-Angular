@@ -1,4 +1,4 @@
-# Angular Pokedex - PT-BR
+# Pokedex - Angular - PT-BR
 
 Projeto de uma pokédex contruída com Angular e com a <a href="https://pokeapi.co."> PokeApi</a>(API do pokemon)
 Este projeto conta com boas praticas na utilização de service para requisição em API e tratamento de dados para cada componentes, página responsiva e componentes para fácil manutenção.
@@ -12,7 +12,7 @@ Este projeto conta com boas praticas na utilização de service para requisiçã
 ## Demo
 https://angular-pokedex-oliveiravitor32.vercel.app/
 
-# Angular Pokedex - EN
+# Pokedex - Angular - EN
 
 Project of a pokedex built in Angular and with the <a href="https://pokeapi.co.">PokeApi</a>(Pokemon API)
 This project has good practices in using services for API requests and data processing for each component, responsive page and components for easy maintenance.
